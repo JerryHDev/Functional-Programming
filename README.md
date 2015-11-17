@@ -2,8 +2,8 @@
 
 Jerry Huang's Functional Programming projects and exercises.
 
-Palo Alto Senior High School
+Palo Alto High School
 
-Sophomore Year
+Sophomore Year - Mr. Friedland
 
 1st Semester 2014
