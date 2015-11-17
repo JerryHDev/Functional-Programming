@@ -1,0 +1,30 @@
+from graphics import *
+import math
+def main():
+    win = GraphWin("Triangle Information", 400,400)
+    win.setCoords(0,0,400,400)
+    message = Text(Point(200,375),"Click three points");message.draw(win)
+    perimeter_ = Text(Point(60, 40), "Perimeter:");perimeter_.draw(win)
+    area_ = Text(Point(240,40), "Area:");area_.draw(win)
+    perimeter = Text(Point(150, 40), "");perimeter.draw(win)
+    area = Text(Point(320,40),"");area.draw(win)
+    p1 = win.getMouse();p1.draw(win)
+    p2 = win.getMouse();p2.draw(win)
+    p3 = win.getMouse();p3.draw(win)
+    triangle = Polygon(p1,p2,p3)
+    triangle.draw(win)
+    dx = p1.getX() - p2.getX()
+    dy = p1.getY() - p2.getY()
+    length1 = math.sqrt(dx**2 + dy**2)
+    dx = p2.getX() - p3.getX()
+    dy = p2.getY() - p3.getY()
+    length2 = math.sqrt(dx**2 + dy**2)
+    dx = p3.getX() - p1.getX()
+    dy = p3.getY() - p1.getY()
+    length3 = math.sqrt(dx**2 + dy**2)
+    p = length1 + length2 + length3
+    s = (length1 + length2 + length3) / 2
+    a = math.sqrt(s * (s - length1) * (s - length2) * (s - length3))
+    perimeter.setText(p)
+    area.setText(a)
+main()

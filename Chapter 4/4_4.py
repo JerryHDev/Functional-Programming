@@ -1,0 +1,27 @@
+from graphics import *
+def main():
+    win = GraphWin("Christmas",400,400)
+    win.setCoords(0,0,200,200)
+    #Snowman
+    circle1 = Circle(Point(40,100), 15);circle1.draw(win)
+    circle2 = Circle(Point(40,60),25);circle2.draw(win)
+    leftEye = Circle(Point(33,103),2);leftEye.draw(win)
+    rightEye = leftEye.clone()
+    rightEye.move(14,0)
+    rightEye.draw(win)
+    nose = Circle(Point(40,95),3);nose.draw(win)
+    rightArm = Line(Point(65,60),Point(75,70));rightArm.draw(win)
+    leftArm = Line(Point(15,60),Point(5,70));leftArm.draw(win)
+    #Christmas Tree
+    Line(Point(144,0),Point(144,20)).draw(win)
+    Line(Point(156,0),Point(156,20)).draw(win)
+    Line(Point(110,20),Point(190,20)).draw(win)
+    Line(Point(110,20),Point(130,40)).draw(win)
+    Line(Point(190,20),Point(170,40)).draw(win)
+    Line(Point(180,40),Point(120,40)).draw(win)
+    Line(Point(180,40),Point(160,60)).draw(win)
+    Line(Point(120,40),Point(140,60)).draw(win)
+    Line(Point(130,60),Point(150,80)).draw(win)
+    Line(Point(130,60),Point(170,60)).draw(win)
+    Line(Point(170,60),Point(150,80)).draw(win)
+main()
