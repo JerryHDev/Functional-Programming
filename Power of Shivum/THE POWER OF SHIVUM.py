@@ -4,7 +4,7 @@
 
 from graphics import *
 
-def troll(): #GET IT? TROLL LOLOL Define Troll: SOMEONE WHO GIVES OTHERS SHIT
+def main():
     print("Welcome to the POWER OF SHIVUM GAME")
     print("-----------------------------------")
     name = input("You are taking a walk, when suddenly, you see a shiv midget. Who do you yell to for help? ")
@@ -133,4 +133,4 @@ def troll(): #GET IT? TROLL LOLOL Define Troll: SOMEONE WHO GIVES OTHERS SHIT
         mouth.setFill("white")
         shiv.getMouse()
 
-troll() #YEAH RUN THIS TROLL SHIT LETS GO NGGA
+main()
